@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Dashboard Utenti - XHR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dashboard Utenti (XHR)</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cerca utente per nome o username...">
+      <button id="btnSearch">Cerca</button>
+      <button id="btnReset">Reset</button>
+    </div>
+
+    <div id="loading" class="hidden">Caricamento in corso...</div>
+    <div id="error" class="error-msg hidden"></div>
+
+    <div id="userGrid" class="grid"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
